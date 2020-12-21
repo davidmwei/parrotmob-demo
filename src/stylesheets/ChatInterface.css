@@ -1,6 +1,5 @@
 .chat-box {
     width: 65%;
-    height: 80vh;
     margin-left: 3%;
     margin-right: 5%;
     background: #F9FBFF;
@@ -14,10 +13,13 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
+    min-height: 80vh;
+    height: 80vh;
 }
 
 .chat-box .messages-container .messages-list {
     padding: 25px;
+    min-height: 80vh;
 }
 
 .chat-box .input-container {

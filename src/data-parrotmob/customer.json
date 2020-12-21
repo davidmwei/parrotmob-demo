@@ -1,0 +1,85 @@
+{
+    "customers": [
+        {
+            "phone": "206-966-8658",
+            "name": "David",
+            "address": "2525 Benvenue Ave Apt 10",
+            "city": "Berkeley",
+            "state": "CA",
+            "zip": 94704,
+            "age": 99,
+            "billing": 9999999999999999,
+            "transactions": [
+                {
+                    "brand": "Nike",
+                    "item": "ZoomX Vaporfly",
+                    "price": 250
+                },
+                {
+                    "brand": "Unapologetic",
+                    "item": "Faith got me livin risky",
+                    "price": 59
+                },
+                {
+                    "brand": "Nike",
+                    "item": "Knit Training Pants",
+                    "price": 250
+                }
+            ]
+        },
+        {
+            "phone": "111-111-1111",
+            "name": "Osa",
+            "address": "8 West 126th Street",
+            "city": "New York",
+            "state": "NY",
+            "zip": 10027,
+            "age": 25,
+            "billing": 9999999999999999,
+            "transactions": [
+                {
+                    "brand": "Rogue",
+                    "item": "Rogue Basic Shirt",
+                    "price": 25.00
+                },
+                {
+                    "brand": "Common Projects",
+                    "item": "Achilles Lace-up Sneakers",
+                    "price": 359.00
+                },
+                {
+                    "brand": "North Face",
+                    "item": "Men's HMLYN Down Parka",
+                    "price": 330.00
+                }
+            ]
+        },
+        {
+            "phone": "206-999-9999",
+            "name": "Peter",
+            "address": "400 Broad St",
+            "city": "Seattle",
+            "state": "WA",
+            "zip": 98109,
+            "age": 24,
+            "billing": 9999999999999998,
+            "transactions": [
+                {
+                    "brand": "Patagonia",
+                    "item": "Recycled Cashmere Crewneck Sweater",
+                    "price": 199
+                },
+                {
+                    "brand": "Patagonia",
+                    "item": "DAS Parka",
+                    "price": 449
+                },
+                {
+                    "brand": "Patagonia",
+                    "item": "Lightweight Synchilla Snap-T Fleece Pullover",
+                    "price": 119
+                }
+            ]
+        }
+    ]
+}

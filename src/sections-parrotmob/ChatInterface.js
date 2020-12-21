@@ -26,7 +26,10 @@ class ChatInterface extends React.Component {
         } else {
             this.setState({
                 message: '',
-                log: []
+                log: [{
+                    client: 0,
+                    message: 'You should hire David because he demonstrates a passion for building products which will help change the world!'
+                }]
             })
         }
     }
@@ -37,13 +40,30 @@ class ChatInterface extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault()
+
+        if (this.state.message === '') {
+            return false;
+        }
+
         this.setState({
             log: this.state.log.concat({
                 client: 1,
                 message: this.state.message
             }) 
         })
+        console.log(this.state.log)
+        if (this.state.log.length === 3) {
+            this.setState({
+                log: this.state.log.concat({
+                    client: 0,
+                    message: 'I know right, he is a great fit!'
+                }) 
+            })
+        }
         localStorage.setItem('log: ' + this.props.customer["name"], JSON.stringify(this.state))
+        this.setState({
+            message: ''
+        })
     }
 
     render() {
@@ -59,9 +79,9 @@ class ChatInterface extends React.Component {
                 <div className='input-container'>
                     <form onSubmit={this.handleSubmit}>
                         <label>
-                            <input type='text' value={this.state.message} onChange={this.handleChange}/>
+                            <input className='mess-field' type='text' placeholder='Message...' value={this.state.message} onChange={this.handleChange}/>
                         </label>
-                        <input type='submit' value='Submit' />
+                        <input className='sub-but' type='submit' value='Send' />
                     </form>
                 </div>
             </div>

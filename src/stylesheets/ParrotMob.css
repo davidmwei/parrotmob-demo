@@ -1,0 +1,10 @@
+html {
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.parrotmob-main {
+    display: flex;
+    flex-direction: row;
+}

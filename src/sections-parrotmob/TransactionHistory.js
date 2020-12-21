@@ -26,7 +26,7 @@ class TransactionHistory extends React.Component {
 
         return (
             <div className='trans-history'>
-                <input type='text' value={this.state.value} onChange={this.handleChange} />
+                <input className='filter-bar' type='text' placeholder='Filter' value={this.state.value} onChange={this.handleChange} />
                 <ul className='trans-list'>
                     {transactions.filter(transaction => (transaction.brand + " " + transaction.item).includes(this.state.input)).map(trans => {
                                 let brand = trans.brand;

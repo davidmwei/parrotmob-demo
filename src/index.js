@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import ParrotMob from './ParrotMob.js';
 
+import './stylesheets/ChatInterface.css';
+import './stylesheets/CustomerDetails.css';
+import './stylesheets/ParrotMob.css';
 
 ReactDOM.render(
   <ParrotMob />,

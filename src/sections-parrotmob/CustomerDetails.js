@@ -7,28 +7,26 @@ class CustomerDetails extends React.Component {
         let customer = this.props.customer
 
         return (
-            <div className='CustomerDetails'>
-                <div className='Personal-Info'>
-                    <div id='name'>
-                        { customer["name"] }
+            <div className='customer-details'>
+                <div className='personal-info'>
+                    <div className='identity'>
+                        <div id='name'>
+                            { customer["name"] }
+                        </div>
+                        <div id='phone'>
+                            { customer["phone"] }
+                        </div>
                     </div>
-                    <div id='phone'>
-                        { customer["phone"] }
+                    <div className='shipping'>
+                        <div id='address'>
+                            { customer["address"] }
+                        </div>
+                        <div id='city-state-zip'>
+                            { customer["city"] + ', ' + customer["state"] + ', ' + customer["zip"] }
+                        </div>
                     </div>
-                    <div id='address'>
-                        { customer["address"] }
-                    </div>
-                    <div id='city'>
-                        { customer["city"] }
-                    </div>
-                    <div id='state'>
-                        { customer["state"] }
-                    </div>
-                    <div id='zip'>
-                        { customer["zip"] }
-                    </div>
-                    <div id='billing'>
-                        { customer["billing"] }
+                    <div className='billing'>
+                        { 'Billing: ' + customer["billing"] }
                     </div>
                 </div>
                 <TransactionHistory customer={customer}/>

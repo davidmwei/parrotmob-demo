@@ -8,7 +8,7 @@
             "state": "CA",
             "zip": 94704,
             "age": 99,
-            "billing": 9999999999999999,
+            "billing": 9999999999999998,
             "transactions": [
                 {
                     "brand": "Nike",
@@ -35,7 +35,7 @@
             "state": "NY",
             "zip": 10027,
             "age": 25,
-            "billing": 9999999999999999,
+            "billing": 9999999999999998,
             "transactions": [
                 {
                     "brand": "Rogue",

@@ -2,13 +2,18 @@
 
 Built using React with dummy data located in JSONs.
 
+## Instructions
+To run this demo locally, please download all files locally into a directory of choice. Navigate to the directory and run `npm start`.
+
+You can refresh the page to randomly choose one of three customers: David, Peter, and Osa.
+
+Your conversation will be saved so that you can refresh to talk to Peter and still be able to return to the same conversation with Osa.
+
 ## Hierarchy of Components
-1. ParrotMob.js
-    1. CustomerDetails.js
-        1. TransactionHistory.js
-            1. SearchBar.js
-            2. TransactionList.js
-            3. Transaction.js
-    2. ChatInterface.js
-        1. ChatBubble.js
+- ParrotMob.js
+    - CustomerDetails.js
+        - TransactionHistory.js
+            - Transaction.js
+    - ChatInterface.js
+        - ChatBubble.js
         
